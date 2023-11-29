@@ -68,10 +68,10 @@ function htmlFila(doc) {
   const data = doc.data();
   const nombre = cod(data.nombre);
   const apellido = cod(data.apellido);
-  var fsf= cod(data.fecha);
+  var fsf = cod(data.fecha);
   var fecha = new Date(fsf);
-  var espacio="[   -   ]";
-  var dformat = [fecha.getDate()+1, fecha.getMonth()+1, fecha.getFullYear()].join('/');
+  var espacio = "[   -   ]";
+  var dformat = [fecha.getDate() + 1, fecha.getMonth() + 1, fecha.getFullYear()].join('/');
   const parámetros =
     new URLSearchParams();
   parámetros.append("id", doc.id);
@@ -83,7 +83,6 @@ function htmlFila(doc) {
           ${nombre} ${apellido} ${dformat}
         </strong>
       </a>
-     
     </li>`);
 }
 
@@ -92,4 +91,3 @@ function errConsulta(e) {
   muestraError(e);
   consulta();
 }
-  
