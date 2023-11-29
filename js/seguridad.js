@@ -13,7 +13,7 @@ export async function iniciaSesionFacebook() {
    * @type {import("../lib/tiposFire.js").FacebookAuthProvider} */
   const provider =
     // @ts-ignore
-    new firebase.auth.FacebookAuthProvider();
+    new firebase.auth.GithubAuthProvider();
   /* Configura el proveedor de
    * Facebook para que permita
    * seleccionar de una lista. */
