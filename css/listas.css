@@ -15,11 +15,13 @@
 .fila {
   display: block;
   padding: 1rem;
+  transition: background-color 0.3s ease;
+  /* Efecto de transición en las filas */
 }
 
-a.fila:active {
-  background-color:
-    var(--col-active);
+.fila:hover {
+  background-color: #fcd5ce;
+  /* Color de fondo rosado al pasar el ratón */
 }
 
 .primario {

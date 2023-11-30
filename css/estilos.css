@@ -4,23 +4,27 @@
 
 :root {
   font-family: sans-serif;
-  --col-active: #4646462c;
-  --color-header: white;
-  --colorMiNav: white;
+  --col-active: #ffb347;
+  /* Color de fila activa naranja */
+  --color-header: #f59aa8;
+  /* Color de fondo del encabezado rosado */
+  --colorMiNav: #f59aa8;
+  /* Color de fondo de la barra de navegación rosado */
 }
 
 body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
+  background-color: #fff7f6;
+  /* Color de fondo blanco */
 }
 
 header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color:
-    var(--color-header);
+  background-color: var(--color-header);
 }
 
 .herramientas {
@@ -29,17 +33,27 @@ header {
   align-items: center;
   align-content: flex-end;
   justify-content: flex-end;
-  margin-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  gap: 0.5rem;
+  margin-top: 1rem;
+  /* Aumentado el espacio superior */
+  padding-bottom: 1rem;
+  /* Aumentado el espacio inferior */
+  gap: 1rem;
+  /* Aumentado el espacio entre elementos */
 }
 
 header input {
   flex-grow: 1;
+  padding: 10px;
+  /* Ajustado el espaciado interno */
+  border: 1px solid #f59aa8;
+  /* Color del borde rosado */
+  border-radius: 5px;
+  /* Borde redondeado */
 }
 
 h1 {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  /* Aumentado el espacio alrededor del título */
 }
 
 figure img {
@@ -50,7 +64,10 @@ legend,
 p label {
   display: block;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  /* Aumentado el tamaño de la fuente */
+  margin-bottom: 0.5rem;
+  /* Aumentado el espacio inferior */
 }
 
 p label>* {
@@ -59,8 +76,9 @@ p label>* {
   font-size: 1rem;
   box-sizing: border-box;
   width: 100%;
+  margin-bottom: 0.5rem;
+  /* Aumentado el espacio inferior */
 }
-
 
 /* Estilos para los recuadros de entrada */
 input[type="text"],
@@ -68,8 +86,21 @@ input[type="email"],
 input[type="password"] {
   width: 100%;
   padding: 10px;
-  margin: 5px 0;
+  margin: 10px 0;
+  /* Aumentado el espacio vertical */
   box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #f59aa8;
+  /* Color del borde rosado */
+  border-radius: 5px;
+  /* Borde redondeado */
+  background-color: #fff7f6;
+  /* Color de fondo blanco */
+}
+
+/* Agregado estilo al pasar el ratón sobre los campos de entrada */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-color: #ffb347;
+  /* Color del borde naranja */
 }
